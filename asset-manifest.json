@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.82735641.css",
+    "main.js": "/Portfolio/static/js/main.867e707c.js",
+    "static/js/415.fc063c41.chunk.js": "/Portfolio/static/js/415.fc063c41.chunk.js",
+    "static/js/787.f6e65957.chunk.js": "/Portfolio/static/js/787.f6e65957.chunk.js",
+    "static/media/pic.jpeg": "/Portfolio/static/media/pic.009bf8f18247eca7a454.jpeg",
+    "static/media/YashwanthKrishna_Porandla.pdf": "/Portfolio/static/media/YashwanthKrishna_Porandla.6c8b2239b6fb16df9edf.pdf",
+    "static/media/home-main.svg": "/Portfolio/static/media/home-main.198b6c321929602cb35290cc1c5827d2.svg",
+    "static/media/logo.png": "/Portfolio/static/media/logo.7e5fd490f089df712910.png",
+    "static/media/pre.svg": "/Portfolio/static/media/pre.c761e89ae1146c58c4b2.svg",
+    "index.html": "/Portfolio/index.html",
+    "main.82735641.css.map": "/Portfolio/static/css/main.82735641.css.map",
+    "main.867e707c.js.map": "/Portfolio/static/js/main.867e707c.js.map",
+    "415.fc063c41.chunk.js.map": "/Portfolio/static/js/415.fc063c41.chunk.js.map",
+    "787.f6e65957.chunk.js.map": "/Portfolio/static/js/787.f6e65957.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82735641.css",
+    "static/js/main.867e707c.js"
+  ]
+}
