@@ -1,0 +1,85 @@
+.text-right {
+    text-align: right;
+    padding-right: 400px;
+  }
+.resume-section {
+    padding-bottom: 30px; /* Padding around the section */
+    background-color: #ffffff; /* Background color */
+    color: #000000; /* Text color */
+  }
+  
+  .resume-header {
+    padding-left: 100px;
+    text-align: left;
+    padding-bottom: 30px; /* Align text to the left */
+ /* Ensure space between header and the next section */
+  }
+  .contact-info {
+    margin-bottom: 30px;
+     /* Space between sections */
+  }
+  
+  .name {
+    font-size: 3em; /* Font size for the name */
+    font-weight: bold; /* Bold font */
+  }
+  
+  .skills,
+  .tools,
+  .technologies {
+    text-align: left; /* Align text to the left */
+    border: 1px solid #e0e0e0; /* Light border for outline */
+    padding: 20px; /* Padding inside the box */
+    background-color: #f5f5f5; /* Light grey background */
+    margin: 20px; /* Consistent margin for separation */
+    width: 20%; /* Consistent width for each section */
+    display: inline-block; /* Ensure inline display for alignment */
+  }
+  
+  .skills {
+    margin-right: 20px;
+    margin-left: 100px; /* Consistent margin for even spacing */
+ 
+}
+  
+  .tools {
+    margin-right: 20px; /* Consistent margin for even spacing */
+  }
+  
+  .technologies {
+    margin-right: 0; /* Last section, no extra margin needed */
+  }
+  
+  .skills h2,
+  .tools h2,
+  .technologies h2 {
+    font-size: 1.5em; /* Font size for headings */
+    font-weight: bold; /* Bold font for headings */
+  }
+  
+  .skills ul,
+  .tools ul,
+  .technologies ul {
+    list-style-type: none; /* Remove default list styles */
+  }
+  
+  .skills li,
+  .tools li,
+  .technologies li {
+    font-size: 1.2em; /* Font size for list items */
+  }
+  custom-button {
+    background-color: #000000; /* Default button background */
+    color: #ffffff; /* Default text color */
+    padding: 10px; /* Optional padding */
+    border: none; /* No border */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    border: 2px solid #000000;
+    
+  }
+  
+  custom-button:hover {
+    background-color: #ffffff !important; /* Hover background color */
+    color: #000000 !important; /* Hover text color */
+   
+  }

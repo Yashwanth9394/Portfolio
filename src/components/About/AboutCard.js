@@ -4,38 +4,20 @@ import { ImPointRight } from "react-icons/im";
 
 function AboutCard() {
   return (
-    <Card className="quote-card-view">
+    <Card className="about-para">
       <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
-            <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
-          </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-          </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
-        </blockquote>
+        
+      <p style={{ textAlign: "justify" }}>
+  I'm Yashwanth Krishna, a computer science graduate from the University at Buffalo with a focus on full stack development and related technologies.I'm passionate about software engineering and using technology to solve complex problems.
+  <p style={{ textAlign: "justify" }}></p> I enjoy working on projects that blend technical strategy with precise execution, aiming to become a domain expert in full stack development, managing everything from initial concept to final deployment. My interests also include data science, cloud computing, and web application development.
+</p>
+<p style={{ textAlign: "justify" }}>
+  I'm seeking opportunities in tech companies, focusing on full stack development, while also exploring roles that involve cloud computing and data-driven solutions. My experience includes internships and projects where I've developed my skills in these areas. You can view my resume/CV here.
+</p>
+<p style={{ textAlign: "justify" }}>
+  I was born and raised in Warangal, a lively city in India. In my free time, I enjoy cooking, working out, reading books, and spending time with friends and family.
+</p>
+        
       </Card.Body>
     </Card>
   );

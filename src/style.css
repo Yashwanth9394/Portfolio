@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 html {
   --section-background-color: linear-gradient(
     to bottom left,
@@ -32,7 +34,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: #ffffff;
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -57,12 +59,12 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #efeef0;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(254, 254, 254, 0.959);
   border-radius: 12px;
 }
 
@@ -81,12 +83,14 @@ button:focus {
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
 }
-
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
+  font-family: 'Oswald', sans-serif !important;
+  font-weight: bold !important;
+ 
 }
 
 .navbar-toggler {
@@ -97,7 +101,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #ffffff !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -144,23 +148,23 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: #ffffff !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
 .navbar-brand {
-  color: rgb(250, 250, 250) !important;
+  color: rgb(255, 42, 42) !important;
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 3.4em !important;
+  width: 4.0em !important;
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -194,54 +198,34 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #000000;
   bottom: 1px;
   left: 0;
   z-index: -1;
-  transition: all 0.3s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
 }
 
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
 }
+.filled-box {
+  background-color: #c6fccc; /* Change to desired color */
+  color: rgb(0, 0, 0); /* Text color inside the box */
+  padding: 5px 10px; /* Padding for spacing */
+  border-radius: 0px; /* Border-radius for rounded corners */
+  font-weight: bold; /* Optional: to make the text bold */
+  transition: background-color 0.3s; /* Optional: smooth transition on hover */
+}
+
+.filled-box:hover {
+  background-color: #000000 !important; /* Background becomes black on hover */
+  color: #ffffff !important; /* Text becomes white on hover */
+}
 
 /* --------- */
 /* Home section */
-/* --------- */
-.wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
-  display: inline-block;
-}
 
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
-  20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  } /* Reset for the last half to pause */
-  100% {
-    transform: rotate(0deg);
-  }
-}
+
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -257,31 +241,38 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background-image: none;
+  background-color: rgb(255, 255, 255);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
+  height: 100vh; /* Add this line */
 }
-
 .home-content {
   padding: 9rem 0 2rem !important;
-  color: whitesmoke;
+  color: rgb(17, 0, 0);
   text-align: left;
 }
 
 .heading {
   font-size: 2.4em !important;
   padding-left: 50px !important;
+
 }
 
 .heading-name {
   font-size: 2.5em !important;
   padding-left: 45px !important;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Set font family */
+
+
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: #000000;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Set font family */
+
 }
 
 .Typewriter__wrapper {
@@ -448,7 +439,8 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  background-color: rgb(255, 255, 255) !important;
+  
 }
 
 .project-card {
@@ -541,13 +533,12 @@ button:focus {
 /* --------- */
 /* About */
 /* --------- */
-
 .about-section {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .tech-icons {
@@ -599,15 +590,16 @@ button:focus {
   }
 }
 /* --------- */
+
 /* Resume */
 /* --------- */
 
 .resume-section {
   position: relative !important;
-  padding-top: 110px !important;
-  padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  padding-top: 250px !important;
+  padding-bottom: 450px !important;
+  background-color: rgb(255, 255, 255) !important;
+  color: #000000 !important;
 }
 
 .resume {
@@ -652,7 +644,7 @@ button:focus {
 .resume .resume-item .resume-title {
   line-height: 18px;
   font-size: 0.9em;
-  background: #5234795d;
+  background: #fefefe5d;
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;

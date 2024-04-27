@@ -1,17 +1,12 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
-import Github from "./Github";
-import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
-import Toolstack from "./Toolstack";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import AboutCard from './AboutCard'; // Corrected import statement
+import myPicture from '../../Assets/pic.jpeg'; // Corrected path to the image file
 
 function About() {
   return (
     <Container fluid className="about-section">
-      <Particle />
-      <Container>
+      <Container> {/* Outer container */}
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
             md={7}
@@ -21,32 +16,34 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px",textAlign:'left' }}>
+              Hello!
             </h1>
-            <Aboutcard />
+            <AboutCard /> {/* Include your component */}
           </Col>
           <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
+            md={5} // The column for the picture
+            style={{
+              justifyContent: "center",
+              display: "flex",
+              alignItems: "center",
+              paddingBottom:"250px" // Center the image vertically
+            }}
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <img
+              src={myPicture} // Reference to your image
+              alt="My Picture"
+              style={{
+                width: "100%", // Adjust the width as needed
+                height: "auto", // Maintain aspect ratio
+                maxWidth: "300px", // Set a maximum width if needed
+                borderRadius: "10%", // Optional: Make the image round
+              }}
+            />
           </Col>
+
         </Row>
-        <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
-        </h1>
-
-        <Techstack />
-
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
-        </h1>
-        <Toolstack />
-
-        <Github />
-      </Container>
+      </Container> {/* Close the inner container */}
     </Container>
   );
 }
