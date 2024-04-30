@@ -1,40 +1,30 @@
-import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
+import React, { useState } from 'react';
 
-function ProjectCards(props) {
+const ProjectCard = ({ project, onHover, onClick }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const cardStyle = {
+    padding: '20px', // Add padding around the card
+    backgroundColor: '#fff', // Change the background color to white
+    marginTop: '200px', // Add margin to the top of the card
+  };
+
+  const imageStyle = {
+    width: '100%',
+    height: 'auto'
+  };
+
   return (
-    <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
-        </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
-      </Card.Body>
-    </Card>
+    <div
+      style={cardStyle}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      onClick={onClick}
+    >
+      <img style={imageStyle} src={isHovered ? project.hoverImg : project.initialImg} alt="project" />
+      {isHovered && <h2>{project.details}</h2>}
+    </div>
   );
-}
-export default ProjectCards;
+};
+
+export default ProjectCard;

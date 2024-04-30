@@ -9,7 +9,7 @@ const Resume = () => {
   return (
     <Container fluid className="resume-section">
       <Row className="resume-header">
-        <Col md={12} className="contact-info"> {/* Full-width column for header */}
+        <Col md={15} className="contact-info"> {/* Full-width column for header */}
           <h1 className="name">YASHWANTH KRISHNA</h1>
           <p>Yashwanth753@gmail.com</p>
           <a href={resume} download className="btn btn-primary">DOWNLOAD PDF</a> {/* Use standard Bootstrap button */}

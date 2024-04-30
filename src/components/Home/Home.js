@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import styled, { keyframes } from 'styled-components';
-import Particle from '../Particle';
 import homeMain from '../../Assets/home-main.svg'; // Import the image
 // Define keyframes for the scrolling effect
 const scrollText = keyframes`
